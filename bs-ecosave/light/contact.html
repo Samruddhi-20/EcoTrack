@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ECOSAVE BOOTSTRAP ENVIRONMENT TEMPLATE</title>
+    <!-- Bootstrap Style -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font-Awesome Style -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Animation Style -->
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <!-- Pretty Photo Style -->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+    <!-- Google Font Style -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- Custom Style -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+        /* Custom styles for the sign in button */
+        .navbar .nav .signin-btn {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding for button */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Transition effect */
+        }
+        .navbar .nav .signin-btn:hover {
+            background-color: #0c6c0c; /* Darker green on hover */
+        }
+
+        /* Animation for navbar */
+        .navbar {
+            opacity: 0; 
+            transform: translateY(-50px); /* Slide from the top */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Transition effects */
+        }
+        .navbar.show {
+            opacity: 1; 
+            transform: translateY(0); /* Final position */
+        }
+
+        /* Hover effect for navbar items */
+        .navbar-nav > li > a {
+            transition: color 0.3s; /* Color transition */
+        }
+        .navbar-nav > li > a:hover {
+            color: #4CAF50; /* Change color on hover */
+        }
+        /* Change color for h3 elements with the class media-heading */
+.media-heading {
+    color: #050505; /* Change this to your desired color */
+}
+
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="logo11.png" class="navbar-brand-logo" alt="logo" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="recycle.html">RECYCLE</a></li>
+                    <li><a href="awareness.html">AWARENESS</a></li>
+                    <li><a href="rules.html">RULES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="login.html" class="signin-btn">LOGIN</a></li> <!-- Special Sign In Button -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add show class to navbar for animation
+        window.onload = function() {
+            var navbar = document.getElementById('navbar');
+            navbar.classList.add('show');
+        };
+    </script>
+
+    <!-- Include jQuery and Bootstrap JS for navbar toggle functionality -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--./ NAV BAR END -->
+    <!-- CONTACT SECTION STARTS -->
+    
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <h2 data-wow-delay="0.3s" class="wow rollIn animated"><strong><br><br><br>CONTACT US </strong></h2>
+                    <!-- <p class="sub-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
+
+                    <!-- <p class="sub-head  wow rotateIn animated" data-wow-delay="0.4s"><strong>ADDRESS :</strong> 2234/908, Newyork City , USA - 002309</p> -->
+                </div>
+            </div>
+            
+            <div class="row pad-top-botm">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control wow rotateIn animated" data-wow-delay="0.5s" required="required" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control wow rotateIn animated" required="required" data-wow-delay="0.6s" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message"  required="required" data-wow-delay="0.7s" class="wow rotateIn animated form-control" style="min-height: 150px;" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block btn-lg wow rotateIn animated " data-wow-delay="0.8s">SUBMIT REQUEST</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+            
+        </div>
+    </body>
+    </html>
+         
+    <!--./ CONTACT SECTION END -->
